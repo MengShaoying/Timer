@@ -46,7 +46,7 @@ class Timer
      *
      * @return string
      */
-    public function getTimeType(): string
+    public function getTimeType()
     {
         return $this->timeType;
     }
@@ -56,7 +56,7 @@ class Timer
      *
      * @return int
      */
-    public function second(): int
+    public function second()
     {
         return $this->timeSecond;
     }
@@ -66,7 +66,7 @@ class Timer
      *
      * @return float
      */
-    public function floatTime(): float
+    public function floatTime()
     {
         return $this->timeFloat;
     }
@@ -77,7 +77,7 @@ class Timer
      * @param Timer $timer
      * @return float
      */
-    public function sub(Timer $timer): float
+    public function sub(Timer $timer)
     {
         return $this->second() - $timer->second() + ($this->floatTime() - $timer->floatTime());
     }

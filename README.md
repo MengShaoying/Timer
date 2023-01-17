@@ -11,14 +11,16 @@
 
 通过实例化`Timer`类来获得当前的时间，然后调用对象方法获得两个时间对象的时间差。示例：
 
-    $t0 = new Timer\Timer();
-    for ($i = 0; $i < 10000000; $i++) {
-        $x = mt_rand();
-    }
-    $t1 = new Timer\Timer();
-    // 输出时间差，t1 - t0
-    echo $t1->sub($t0);
-    echo PHP_EOL;
+```php
+$t0 = new Timer\Timer();
+for ($i = 0; $i < 10000000; $i++) {
+    $x = mt_rand();
+}
+$t1 = new Timer\Timer();
+// 输出时间差，t1 - t0
+echo $t1->sub($t0);
+echo PHP_EOL;
+```
 
 示例代码输出类似：
 
