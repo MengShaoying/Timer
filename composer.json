@@ -1,0 +1,21 @@
+{
+    "name": "mengshaoying/timer",
+    "description": "计算时间差",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Timer\\": "Timer/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MengShaoying",
+            "email": "mengshaoying@aliyun.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^5.3"
+    }
+}
